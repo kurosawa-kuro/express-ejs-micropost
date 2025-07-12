@@ -1,13 +1,24 @@
-AIに対する明確な指示として、以下の箇条書きに修正しました：
+API テストコード対応依頼
+APIテストコードのみでよし
+
+
+
 
 ## プロジェクト要件
+
+### 設計思想
+- **OpenAPI仕様書をシングルソース オブ トゥルースとして扱う**
+- OpenAPI仕様書→テストコード→モデル→実装
 
 ### 基本情報
 - **プロジェクト名**: express-ejs-micropost
 - **プロジェクトパス**: `/home/wsl/dev/my-study/express-ejs-micropost`
+- **言語**: Javascript PoCなのでType Scriptはオーバースペック
 - **フレームワーク**: Node.js + Express + EJS
-- **データベース**: db.json（JSON形式のファイルDB）
+
+- **データベース**: db.json（JSON形式のファイルDB）PoCなのでPostgresqlはオーバースペック
 - **必須ライブラリ**: openapi-backend（OpenAPIスキーマベースのバックエンド実装）
+
 
 ### データモデル
 - **エンティティ**: micropost
@@ -46,6 +57,7 @@ AIに対する明確な指示として、以下の箇条書きに修正しまし
 ### テスト要件
 - OpenAPI仕様に基づいたAPIテストコードの実装
 - openapi-backendのモックハンドラーを使用したテスト
+- テスト用のjson.dbを別途用意
 
 ### デザイン要件
 - 以下のテンプレートを参考にUIを実装:

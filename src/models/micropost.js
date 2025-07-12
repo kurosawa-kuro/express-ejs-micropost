@@ -4,7 +4,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const file = path.join(__dirname, '../../data/db.json');
+const dbFile = process.env.NODE_ENV === 'test' ? 'test-db.json' : 'db.json';
+const file = path.join(__dirname, '../../data', dbFile);
 
 const adapter = new JSONFile(file);
 const db = new Low(adapter, { microposts: [] });

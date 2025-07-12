@@ -14,7 +14,7 @@ const spec = YAML.load(openapiPath);
 const api = new OpenAPIBackend({
   definition: spec,
   strict: false,
-  validate: true,
+  validate: true, // バリデーションを再度有効化
   customizeAjv: (ajv) => {
     addFormats(ajv);
     return ajv;

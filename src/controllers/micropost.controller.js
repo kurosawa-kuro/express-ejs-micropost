@@ -63,7 +63,7 @@ export const createMicropost = async (c, req, res) => {
     if (error.name === 'ZodError') {
       return res.status(400).json({
         success: false,
-        message: error.errors[0]?.message || 'Validation error'
+        message: error.issues[0]?.message || 'Validation error'
       });
     }
     console.error('Error creating micropost:', error);

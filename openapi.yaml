@@ -92,7 +92,8 @@ paths:
           in: path
           required: true
           schema:
-            type: integer
+            type: string
+            pattern: '^[1-9]\d*$'
           description: Micropost ID
       responses:
         '200':
