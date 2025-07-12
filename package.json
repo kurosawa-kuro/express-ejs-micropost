@@ -1,0 +1,39 @@
+{
+  "name": "express-ejs-micropost",
+  "version": "1.0.0",
+  "description": "Micropost sample application with Express.js, EJS, and JSON database",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --ext js,ejs,json,yaml --exec node src/server.js",
+    "dev-web": "nodemon --ext js,ejs,json,yaml --exec node src/server.js"
+  },
+  "dependencies": {
+    "ajv-formats": "^3.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^5.0.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.1",
+    "helmet": "^7.1.0",
+    "lowdb": "^7.0.1",
+    "morgan": "^1.10.0",
+    "openapi-backend": "^5.13.0",
+    "swagger-ui-express": "^5.0.0",
+    "yamljs": "^0.3.0",
+    "zod": "^4.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "express",
+    "ejs",
+    "micropost",
+    "crud"
+  ],
+  "author": "",
+  "license": "MIT"
+}

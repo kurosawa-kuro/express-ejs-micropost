@@ -1,0 +1,29 @@
+{
+  "microposts": [
+    {
+      "id": 1,
+      "title": "First micropost",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Another sample post",
+      "createdAt": "2024-01-02T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "uuuuuuuuuu",
+      "createdAt": "2025-07-12T05:21:54.747Z"
+    },
+    {
+      "id": 4,
+      "title": "My new micropost",
+      "createdAt": "2025-07-12T06:25:17.880Z"
+    },
+    {
+      "id": 5,
+      "title": "My new micropost",
+      "createdAt": "2025-07-12T06:25:19.459Z"
+    }
+  ]
+}

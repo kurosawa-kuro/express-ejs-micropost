@@ -1,0 +1,40 @@
+
+<div class="max-w-4xl mx-auto">
+    <!-- Header -->
+    <div class="mb-8">
+        <div class="flex items-center justify-between">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white"><%= micropost.title %></h2>
+                <div class="mt-2 flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
+                    <span>ID: <%= micropost.id %></span>
+                    <span>•</span>
+                    <span>Created: <%= new Date(micropost.createdAt).toLocaleDateString() %></span>
+                    <% if (micropost.updatedAt) { %>
+                        <span>•</span>
+                        <span>Updated: <%= new Date(micropost.updatedAt).toLocaleDateString() %></span>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-8">
+        <div class="prose prose-lg dark:prose-invert max-w-none">
+            <h1 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+                <%= micropost.title %>
+            </h1>
+            <p class="text-gray-600 dark:text-gray-400">
+                This is a micropost with the title "<%= micropost.title %>". 
+                You can extend this to include more content fields like description, body, tags, etc.
+            </p>
+        </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="mt-8 flex justify-between">
+        <a href="/" class="px-4 py-2 text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+            ← Back to All Posts
+        </a>
+    </div>
+</div>
